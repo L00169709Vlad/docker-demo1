@@ -22,7 +22,8 @@ jobs:
       - name: Azure login
         uses: azure/login@v1
         with:
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          enable-AzPSSession: true
       
       - name: Create Azure resource group
         if: success()
@@ -56,7 +57,8 @@ jobs:
       - name: Azure login
         uses: azure/login@v1
         with:
-          credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          enable-AzPSSession: true
       - name: Destroy Azure environment
         if: success()
         run: |
