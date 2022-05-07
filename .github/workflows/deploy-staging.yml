@@ -1,7 +1,7 @@
 name: Stage the app
 
 env:
-  DOKER_IMAGE_NAME: vlad-azure-ttt
+  DOCKER_IMAGE_NAME: vlad-azure-ttt
   IMAGE_REGISTRY_URL: docker.pkg.github.com
   AZURE_WEBAPP_NAME: vlad-ttt-app
   
