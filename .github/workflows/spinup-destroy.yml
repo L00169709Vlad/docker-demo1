@@ -10,7 +10,7 @@ env:
   AZURE_WEBAPP_NAME: vlad-ttt-app
 
 jobs:
-  setup-up-azure-resourced:
+  setup-up-azure-resources:
     runs-on: ubuntu-latest
     
     if: contains(github.event.pull_request.labels.*.name, 'spin up environment')
